@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+      <link rel="stylesheet" href="house_description_style.css" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="body-wrapper">
+
+      <div class="sidebar-menu">
+        <div class="sidebar-wrapper">
+          <h3 style="font-size: 30px; font-style: italic; color: white; margin-bottom: -10px;">From 199€</h3>
+          <h6 style="color: white; font-size: 15px; margin: 12px 0px 12px;">per night</h6>
+          <hr style="width: 95%; float: left;">
+          <form action="/action_page.php" target="_blank">
+            <p><label><i class="fa fa-calendar-check-o"></i> Check In</label></p>
+            <input type="date" class="date-label check-in" />
+            <p><label><i class="fa fa-calendar-o"></i> Check Out</label></p>
+            <input type="date" class="date-label check-out"/>
+            <p><label><i class="fa fa-male"></i> Adults</label></p>
+            <input class="adults-label people" type="number" value="1" name="Adults" min="1" max="6">
+            <p><label><i class="fa fa-child"></i> Kids</label></p>
+            <input class="kids-label people" type="number" value="0" name="Kids" min="0" max="6">
+            <p><button class="sidebar-button" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button></p>
+
+            <div class="bar-block" style="display: grid; margin-top: 25px;">
+              <a href="#apartment" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-building"></i> Apartment</a>
+              <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16" onclick="document.getElementById('subscribe').style.display='block'"><i class="fa fa-rss"></i> Subscribe</a>
+              <a href="#contact" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-envelope"></i> Contact</a>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+      <!-- Overlay effect when opening sidebar on small screens -->
+      <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+      <!-- !PAGE CONTENT! -->
+      <div class="w3-main w3-white" style="margin-left:20%; width: 59.5%;">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large"></div>
+
+        <!-- Slideshow Header -->
+        <div class="image-slider">
+
+          <h1 style="border-bottom: solid 1px black;">The Apartment</h1>
+
+          <div class="container">
+
+          	<div class="feature">
+          		<figure class="featured-item image-holder r-3-2 transition"></figure>
+          	</div>
+
+          	<div class="gallery-wrapper">
+          		<div class="gallery">
+          				<div class="item-wrapper">
+          					<figure class="gallery-item image-holder r-3-2 active transition"></figure>
+          				</div>
+          				<div class="item-wrapper">
+          					<figure class="gallery-item image-holder r-3-2 transition"></figure>
+          				</div>
+          				<div class="item-wrapper">
+          					<figure class="gallery-item image-holder r-3-2 transition"></figure>
+          				</div>
+          				<div class="item-wrapper">
+          					<figure class="gallery-item image-holder r-3-2 transition"></figure>
+          				</div>
+          				<div class="item-wrapper">
+          					<figure class="gallery-item image-holder r-3-2"></figure>
+          				</div>
+          				<div class="item-wrapper">
+          					<figure class="gallery-item image-holder r-3-2 transition"></figure>
+          				</div>
+          				<div class="item-wrapper">
+          					<figure class="gallery-item image-holder r-3-2 transition"></figure>
+          				</div>
+          				<div class="item-wrapper">
+          					<figure class="gallery-item image-holder r-3-2 transition"></figure>
+          				</div>
+          				<div class="item-wrapper">
+          					<figure class="gallery-item image-holder r-3-2 transition"></figure>
+          				</div>
+          				<div class="item-wrapper">
+          					<figure class="gallery-item image-holder r-3-2 transition"></figure>
+          				</div>
+          		</div>
+          	</div>
+
+          	<div class="controls">
+          		<button class="move-btn left">&larr;</button>
+          		<button class="move-btn right">&rarr;</button>
+          	</div>
+
+          </div>
+
+
+
+
+
+        </div>
+
+        <div class="w3-container">
+          <h4><strong>The space</strong></h4>
+          <div class="space-details">
+            <div class="space-left">
+              <p><i class="fa fa-fw fa-male"></i> Max people: 4</p>
+              <p><i class="fa fa-fw fa-bath"></i> Bathrooms: 2</p>
+              <p><i class="fa fa-fw fa-bed"></i> Bedrooms: 1</p>
+            </div>
+            <div class="space-right">
+              <p><i class="fa fa-fw fa-clock-o"></i> Check In: After 3PM</p>
+              <p><i class="fa fa-fw fa-clock-o"></i> Check Out: 12PM</p>
+            </div>
+          </div>
+
+
+          <h4><strong>Amenities</strong></h4>
+          <div class="amenities-details">
+            <div class="amenities-left">
+              <p><i class="fa fa-fw fa-shower"></i> Shower</p>
+              <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
+              <p><i class="fa fa-fw fa-tv"></i> TV</p>
+            </div>
+            <div class="amenities-right">
+              <p><i class="fa fa-fw fa-cutlery"></i> Kitchen</p>
+              <p><i class="fa fa-fw fa-thermometer"></i> Heating</p>
+              <p><i class="fa fa-fw fa-wheelchair"></i> Accessible</p>
+            </div>
+          </div>
+
+          <h4><strong>Extra Info</strong></h4>
+          <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>We accept: <i class="fa fa-credit-card"></i> <i class="fa fa-cc-mastercard"></i> <i class="fa fa-cc-amex"></i> <i class="fa fa-cc-cc-visa"></i><i class="fa fa-cc-paypal"></i></p>
+
+          <h4><strong>Rules</strong></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Subscribe to receive updates on available dates and special offers.</p>
+          <p><button class="rules-button" onclick="document.getElementById('subscribe').style.display='block'">Subscribe</button></p>
+        </div>
+
+        <!-- Contact -->
+        <div class="w3-container" id="contact">
+          <h2>Contact</h2>
+          <i class="fa fa-map-marker" style="width:30px"></i> Eindhoven, NL<br>
+          <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+          <p>Questions? Go ahead, ask them:</p>
+          <div class="contact-form">
+            <div class="contact-upper">
+              <p><input class="contact-field" type="text" placeholder="Name" required name="Name"></p>
+              <p><input class="contact-field" type="text" placeholder="Email" required name="Email"></p>
+              <textarea class="contact-field-message" type="text" placeholder="Message" required name="Message"></textarea>
+            </div>
+            <br>
+            <button type="submit" class="contact-button">Send a Message</button>
+
+          </div>
+        </div>
+
+
+
+      <!-- End page content -->
+      </div>
+
+      <!-- Subscribe Modal -->
+      <div id="subscribe" class="w3-modal">
+        <div class="w3-container subscribe-menu">
+          <div class="subscribe-menu-body">
+            <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-button w3-xlarge w3-right w3-transparent"></i>
+            <h2>SUBSCRIBE</h2>
+            <p>Join our mailing list to receive updates on available dates and special offers.</p>
+            <p><input class="text-field" type="text" placeholder="Enter e-mail"></p>
+            <button type="button" class="subscribe-button" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+
+    </footer>
+  </body>
+
+
+
+
+
+
+
+
+  <script>
+
+
+
+
+
+
+var gallery = document.querySelector('.gallery');
+var galleryItems = document.querySelectorAll('.gallery-item');
+var numOfItems = gallery.children.length;
+var itemWidth = 23; // percent: as set in css
+
+var featured = document.querySelector('.featured-item');
+
+var leftBtn = document.querySelector('.move-btn.left');
+var rightBtn = document.querySelector('.move-btn.right');
+var leftInterval;
+var rightInterval;
+
+var scrollRate = 0.2;
+var left;
+
+function selectItem(e) {
+	if (e.target.classList.contains('active')) return;
+
+	featured.style.backgroundImage = e.target.style.backgroundImage;
+
+	for (var i = 0; i < galleryItems.length; i++) {
+		if (galleryItems[i].classList.contains('active'))
+			galleryItems[i].classList.remove('active');
+	}
+
+	e.target.classList.add('active');
+}
+
+function galleryWrapLeft() {
+	var first = gallery.children[0];
+	gallery.removeChild(first);
+	gallery.style.left = -itemWidth + '%';
+	gallery.appendChild(first);
+	gallery.style.left = '0%';
+}
+
+function galleryWrapRight() {
+	var last = gallery.children[gallery.children.length - 1];
+	gallery.removeChild(last);
+	gallery.insertBefore(last, gallery.children[0]);
+	gallery.style.left = '-23%';
+}
+
+function moveLeft() {
+	left = left || 0;
+
+	leftInterval = setInterval(function() {
+		gallery.style.left = left + '%';
+
+		if (left > -itemWidth) {
+			left -= scrollRate;
+		} else {
+			left = 0;
+			galleryWrapLeft();
+		}
+	}, 1);
+}
+
+function moveRight() {
+	//Make sure there is element to the leftd
+	if (left > -itemWidth && left < 0) {
+		left = left  - itemWidth;
+
+		var last = gallery.children[gallery.children.length - 1];
+		gallery.removeChild(last);
+		gallery.style.left = left + '%';
+		gallery.insertBefore(last, gallery.children[0]);
+	}
+
+	left = left || 0;
+
+	leftInterval = setInterval(function() {
+		gallery.style.left = left + '%';
+
+		if (left < 0) {
+			left += scrollRate;
+		} else {
+			left = -itemWidth;
+			galleryWrapRight();
+		}
+	}, 1);
+}
+
+function stopMovement() {
+	clearInterval(leftInterval);
+	clearInterval(rightInterval);
+}
+
+leftBtn.addEventListener('mouseenter', moveLeft);
+leftBtn.addEventListener('mouseleave', stopMovement);
+rightBtn.addEventListener('mouseenter', moveRight);
+rightBtn.addEventListener('mouseleave', stopMovement);
+
+
+//Start this baby up
+(function init() {
+	var images = [
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/car.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/city.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/deer.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/flowers.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/food.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/guy.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/landscape.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/lips.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/night.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/table.jpg'
+	];
+
+	//Set Initial Featured Image
+	featured.style.backgroundImage = 'url(' + images[0] + ')';
+
+	//Set Images for Gallery and Add Event Listeners
+	for (var i = 0; i < galleryItems.length; i++) {
+		galleryItems[i].style.backgroundImage = 'url(' + images[i] + ')';
+    galleryItems[i].addEventListener('click', selectItem);
+	}
+})();
+</script>
+
+</html>
